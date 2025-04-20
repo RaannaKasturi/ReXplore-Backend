@@ -5,7 +5,7 @@ import requests
 dotenv.load_dotenv()
 access_key = os.getenv("ACCESS_KEY")
 
-API_ENDPOINT = "https://raannakasturi-rexplorebackend.hf.space/gradio_api/call/rexplore_backend"
+API_ENDPOINT = "https://raannakasturi-scientrybackend.hf.space/gradio_api/call/rexplore_backend"
 def make_request(data: list[str], proxy: str = None) -> None:
     payload = {"data": data}
     proxies = {"http": proxy, "https": proxy} if proxy else None
